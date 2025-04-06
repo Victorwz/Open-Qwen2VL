@@ -48,7 +48,7 @@ vlm.to(device, dtype=torch.bfloat16)
 # Download an image and specify a prompt
 image_url = "https://huggingface.co/adept/fuyu-8b/resolve/main/bus.png"
 image = [vlm.vision_backbone.image_transform(Image.open(requests.get(image_url, stream=True).raw).convert("RGB")).unsqueeze(0)]
-user_prompt = '<image>\nDescribe the image."
+user_prompt = "<image>\nDescribe the image."
 
 # Generate!
 generated_text = vlm.generate_batch(
