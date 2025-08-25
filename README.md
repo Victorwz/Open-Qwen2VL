@@ -29,7 +29,7 @@ pip install -e prismatic-vlms
 
 If you need to pre-train or SFT the MLLM, install flash-attention:
 ```
-pip install flash-attn --no-build-isolation
+pip install flash-attn==2.5.2 --no-build-isolation
 ```
 
 ## Directly Use or Trial
